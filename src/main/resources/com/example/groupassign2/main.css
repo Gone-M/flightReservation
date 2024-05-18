@@ -1,0 +1,50 @@
+
+
+/*Civan Metin - 101441732*/
+/*Maggie Hall - 101447078*/
+/*Tomer Edelman - 101400506*/
+
+
+#mainContainer {
+    -fx-background-color: #f0f8ff;
+}
+
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4682b4;
+}
+
+.text-field, .date-picker {
+    -fx-pref-width: 180px;
+    -fx-font-size: 14px;
+}
+
+.action-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #20b2aa;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.action-button:hover {
+    -fx-background-color: #47d1d1;
+}
+
+.text-field {
+    -fx-pref-width: 180px;
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #b0c4de;
+}
+
+.text-field:hover, .date-picker:hover {
+    -fx-background-color: #ecf5ff;
+}
+
+.text-field:focused, .date-picker:focused {
+    -fx-background-color: #e0f0ff;
+}

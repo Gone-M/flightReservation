@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.groupassign2.CivanMetin1"
+      spacing="10.0"
+      id="mainContainer">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="welcomeText" styleClass="header-label"/>
+
+    <HBox spacing="10">
+        <VBox spacing="5">
+            <Label text="Flight Number" style="-fx-min-width: 100px"/>
+            <TextField fx:id="flightNumberField" promptText="Enter Flight Number" styleClass="text-field"/>
+        </VBox>
+        <VBox spacing="5">
+            <Label text="Source" style="-fx-min-width: 100px"/>
+            <TextField fx:id="sourceField" promptText="Enter Source" styleClass="text-field"/>
+        </VBox>
+        <VBox spacing="5">
+            <Label text="Destination" style="-fx-min-width: 100px"/>
+            <TextField fx:id="destinationField" promptText="Enter Destination" styleClass="text-field"/>
+        </VBox>
+    </HBox>
+
+    <HBox spacing="10">
+        <VBox spacing="5">
+            <Label text="Fare" style="-fx-min-width: 100px"/>
+            <TextField fx:id="fareField" promptText="Enter Fare" styleClass="text-field"/>
+        </VBox>
+        <VBox spacing="5">
+            <Label text="First Name" style="-fx-min-width: 100px"/>
+            <TextField fx:id="firstNameField" promptText="Enter First Name" styleClass="text-field"/>
+        </VBox>
+        <VBox spacing="5">
+            <Label text="Last Name" style="-fx-min-width: 100px"/>
+            <TextField fx:id="lastNameField" promptText="Enter Last Name" styleClass="text-field"/>
+        </VBox>
+        <VBox spacing="5">
+            <Label text="Age" style="-fx-min-width: 100px"/>
+            <TextField fx:id="ageField" promptText="Enter Age" styleClass="text-field"/>
+        </VBox>
+    </HBox>
+
+    <VBox spacing="5">
+        <Label text="Travel Date" style="-fx-min-width: 100px"/>
+        <DatePicker fx:id="travelDatePicker" styleClass="date-picker"/>
+    </VBox>
+
+    <HBox spacing="10">
+        <VBox spacing="5">
+            <Button text="Add Reservation" styleClass="action-button" onAction="#onAddButtonClick"/>
+            <Button text="View Previous" styleClass="action-button" onAction="#onViewPreviousButtonClick"/>
+        </VBox>
+        <VBox spacing="5">
+            <Button text="Delete Reservation" styleClass="action-button" onAction="#onDeleteButtonClick"/>
+            <Button text="View Next" styleClass="action-button" onAction="#onViewNextButtonClick"/>
+        </VBox>
+        <VBox spacing="5">
+            <Button text="Display Ticket" styleClass="action-button" onAction="#onDisplayButtonClick"/>
+            <Button text="Reset" styleClass="action-button" onAction="#onResetButtonClick"/>
+        </VBox>
+    </HBox>
+</VBox>
